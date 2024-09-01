@@ -44,7 +44,7 @@ export default defineNuxtConfig({
     },
   },
 
-  ssr: true,
+  ssr: false,
   components: true,
   spaLoadingTemplate: "pages/loading.html",
   sourcemap: isDevelopment,
@@ -102,25 +102,21 @@ export default defineNuxtConfig({
 
   routeRules: {
     // No JS.
-    "/": { experimentalNoScripts: true },
+    "/": { experimentalNoScripts: false },
   },
 
-  devtools: { enabled: true },
+  devtools: { enabled: isDevelopment },
 
   nitro: {
     preset: "cloudflare_pages",
   },
 
-  experimental: {
-    headNext: true,
-    payloadExtraction: false,
-    inlineSSRStyles: false,
-    renderJsonPayloads: true,
-  },
-
-  vue: {
-    defineModel: true,
-    propsDestructure: true,
+  vite: {
+    define: {
+      // By default, Vite doesn't include shims for NodeJS/
+      // necessary for segment analytics lib to work
+      global: {},
+    },
   },
 
   compatibilityDate: "2024-09-01",
