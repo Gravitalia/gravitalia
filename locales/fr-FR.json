@@ -1,0 +1,72 @@
+{
+  "home": {
+    "discover": "Découvrir...",
+    "description": "Un seul compte, plusieurs services.",
+    "begin": "Commencez par créer un compte",
+    "privacy": {
+      "title": "Respectueux de la vie privée",
+      "description": "Vos données restent privées : elles ne sont jamais vendues ni utilisées à des fins lucratives. Nous ne collectons que ce qui est essentiel pour vous offrir une expérience optimale."
+    },
+    "transparent": {
+      "title": "Transparent",
+      "description": "Notre code est ouvert et libre : il est accessible et modifiable gratuitement. Vous pouvez vérifier, adapter et améliorer nos solutions en toute liberté."
+    },
+    "communal": {
+      "title": "Communautaire",
+      "description": "Nous nous engageons, en particulier envers l'Europe, à mobiliser nos ressources et notre expertise pour soutenir des initiatives bénéfiques à la société, sans attente de rétribution."
+    },
+    "is_also": "Gravitalia, c'est aussi...",
+    "analysis_tools": {
+      "title": "Des outils d'analyses",
+      "description": "Agrège une échelle incroyable de données pour visualiser le CAC 40 ou bien la croissance du Botswana."
+    },
+    "private_conversations": {
+      "title": "Des conversations privées",
+      "description": "Converser sans que la DGSE puisse lire vos messages. Simplement vous et vos destinataires."
+    },
+    "api": {
+      "title": "Des APIs pour les développeurs",
+      "description": "Étendez Gravitalia à votre manière en utilisant les données publiques pour créer de nouveaux services."
+    },
+    "user_security": {
+      "title": "La protection des utilisateurs",
+      "description": "Stocker uniquement le nécessaire, de manière chiffrée et décentralisée."
+    },
+    "perpetual_development": {
+      "title": "Le perpétuel développement",
+      "description": "Développer est l'essence même de la continuité de Gravitalia : nos services évoluent toujours."
+    },
+    "philosophy": {
+      "title": "Une philosophie",
+      "description": "S'exprimer est la clé de la liberté que nous voulons vous offrir."
+    }
+  },
+
+  "faq": {
+    "title": "Six questions pour nous connaître",
+    "what_is": {
+      "question": "Qu'est-ce Gravitalia ?",
+      "answer": "Gravitalia est une fédération de services décentralisés. Sous le nom Gravitalia se cache une multitude de services sont accessibles avec un seul compte, d'où notre slogan : « Un seul compte, plusieurs services. »"
+    },
+    "when_out": {
+      "question": "Quand Gravitalia sera-t-il disponible au public ?",
+      "answer": "D'ici 2025, de nombreux services verront le jour au sein de Gravitalia. Toutefois, notre évolution est incessante : Gravitalia restera toujours en perpétuelle quête de développement !"
+    },
+    "what_missions": {
+      "question": "Quelles sont les missions de Gravitalia ?",
+      "answer": "Gravitalia se déploie sur trois missions différentes : respect de la vie privée, transparence et indépendance. Nous ne devons ni dépendre de vos données ni d'un quelconque gouvernement pour vivre."
+    },
+    "privacy": {
+      "question": "Comment faites-vous pour respecter la vie privée ?",
+      "answer": "Contrairement à Google ou Facebook (Meta), Gravitalia collecte le strict minimum de données utilisateur, ne les commercialise pas et ne les exploite pas pour le ciblage publicitaire. De plus, Gravitalia transfère uniquement les données essentielles à ses services. En fait, seuls votre nom d'utilisateur et votre avatar sont transmis ! Et chaque service étant indépendant, les données ne sont pas recroisées pour savoir qui vous êtes réellement."
+    },
+    "transparency": {
+      "question": "Transparence, quèsaco ?",
+      "answer": "La transparence est fondamentale pour nous. Nous ne dissimulons aucun aspect de notre fonctionnement, que ce soit sur le plan économique ou conceptuel. C'est pourquoi TOUS nos services sont en code ouvert et disponibles sur GitHub : https://github.com/Gravitalia"
+    },
+    "funding": {
+      "question": "Quels sont vos moyens de financement ?",
+      "answer": "Actuellement sans source de financement, Gravitalia fonctionne en déficit constant et dépend des dons pour subsister. Cependant, pas d'inquiétude, Gravitalia a été conçu pour être économique à entretenir !"
+    }
+  }
+}

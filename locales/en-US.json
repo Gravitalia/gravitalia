@@ -1,0 +1,72 @@
+{
+  "home": {
+    "discover": "Discover...",
+    "description": "One account, multiple services.",
+    "begin": "Begin by creating an account",
+    "privacy": {
+      "title": "Respectful of privacy",
+      "description": "Your data remains private: it is never sold or used for profit-making purposes. We only collect what is essential to provide you with the best possible experience."
+    },
+    "transparent": {
+      "title": "Transparent",
+      "description": "Our code is open and free: it can be accessed and modified free of charge. You are free to check, adapt and improve our solutions."
+    },
+    "communal": {
+      "title": "Communal",
+      "description": "We are committed, particularly in Europe, to mobilising our resources and expertise to support initiatives that benefit society, without any expectation of reward."
+    },
+    "is_also": "Gravitalia is also...",
+    "analysis_tools": {
+      "title": "Analysis tools",
+      "description": "Aggregate an incredible scale of data to visualise the NYSE or the growth of USA."
+    },
+    "private_conversations": {
+      "title": "Private conversations",
+      "description": "Converse without the CIA being able to read your messages. Just you and your recipients."
+    },
+    "api": {
+      "title": "APIs for developers",
+      "description": "Extend Gravitalia in your own way by using public data to create new services."
+    },
+    "user_security": {
+      "title": "User security",
+      "description": "Store only what you need, encrypted and decentralised."
+    },
+    "perpetual_development": {
+      "title": "Perpetual development",
+      "description": "Development is the very essence of Gravitalia's continuity: our services are always evolving."
+    },
+    "philosophy": {
+      "title": "Philosophy",
+      "description": "Expressing yourself is the key to the freedom we want to offer you."
+    }
+  },
+
+  "faq": {
+    "title": "Six questions to find out more about us",
+    "what_is": {
+      "question": "What is Gravitalia?",
+      "answer": "Gravitalia is a federation of decentralised services. The name Gravitalia conceals a multitude of services that can be accessed with a single account, hence our slogan: \"One account, multiple services.\"."
+    },
+    "when_out": {
+      "question": "When will Gravitalia be available to the public?",
+      "answer": "Between now and 2025, Gravitalia will be introducing a number of new services. However, we are constantly evolving: Gravitalia will always be on a perpetual quest for development!"
+    },
+    "what_missions": {
+      "question": "What are Gravitalia's missions?",
+      "answer": "Gravitalia has three different missions: respect for privacy, transparency and independence. We must not depend on your data or any government for our livelihood."
+    },
+    "privacy": {
+      "question": "How do you ensure privacy?",
+      "answer": "Unlike Google or Facebook (Meta), Gravitalia collects the strict minimum of user data, does not sell it and does not use it for advertising targeting. What's more, Gravitalia only transfers data that is essential to its services. In fact, only your user name and avatar are transferred! And because each service is independent, the data is not cross-referenced to find out who you really are."
+    },
+    "transparency": {
+      "question": "What is transparency?",
+      "answer": "Transparency is fundamental to us. We do not conceal any aspect of our operations, whether economic or conceptual. That's why ALL our services are open code and available on GitHub: https://github.com/Gravitalia"
+    },
+    "funding": {
+      "question": "How do you finance your projects?",
+      "answer": "Currently without a source of funding, Gravitalia is running a constant deficit and relies on donations to subsist. But don't worry, Gravitalia has been designed to be economical to maintain!"
+    }
+  }
+}
