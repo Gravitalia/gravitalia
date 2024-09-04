@@ -19,11 +19,12 @@
     "@nuxtjs/color-mode": "^3.4.4",
     "@nuxtjs/i18n": "^8.5.1",
     "@nuxtjs/tailwindcss": "^6.12.1",
-    "nuxt": "^3.13.0",
+    "nuxt": "^3.13.1",
     "prettier": "^3.2.5"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.4",
-    "pinia": "^2.2.2"
+    "pinia": "^2.2.2",
+    "std-env": "^3.7.0"
   }
 }
