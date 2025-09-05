@@ -1,6 +1,18 @@
 import { isDevelopment } from "std-env";
 
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  compatibilityDate: "2025-07-15",
+  devtools: { enabled: true },
+
+  modules: ["@nuxt/eslint", "@nuxt/image", "@nuxtjs/color-mode", "@nuxtjs/i18n", "@nuxtjs/tailwindcss", "motion-v/nuxt",
+   ...isDevelopment ? [] : ["nuxt-security"],
+    ],
+
+  ssr: true,
+  components: true,
+  sourcemap: isDevelopment,
+
   app: {
     keepalive: true,
     head: {
@@ -30,94 +42,100 @@ export default defineNuxtConfig({
             "Gravitalia, all connected. Share your photos in complete security and privacy.",
         },
       ],
-      link: [{ rel: "manifest", href: "/manifest.json" }],
-      script: [
-        {
-          innerHTML: !isDevelopment
-            ? '"serviceWorker"in navigator&&navigator.serviceWorker.register("/sw.js",{scope:"/"});'
-            : "",
-        },
-      ],
       bodyAttrs: {
         class: "dark:bg-zinc-900 dark:text-white",
       },
     },
   },
 
-  ssr: false,
-  components: true,
-  spaLoadingTemplate: "pages/loading.html",
-  sourcemap: isDevelopment,
-
-  modules: [
-    "@pinia/nuxt",
-    [
-      "@nuxtjs/color-mode",
+  i18n: {
+    defaultLocale: "en",
+    strategy: "no_prefix",
+    langDir: ".",
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: "locale",
+      redirectOn: "root",
+      fallbackLocale: "en",
+      alwaysRedirect: true,
+    },
+    locales: [
       {
-        preference: "system",
-        fallback: "light",
-        hid: "color-script",
-        globalName: "__NUXT_COLOR_MODE__",
-        componentName: "ColorScheme",
-        classPrefix: "",
-        classSuffix: "",
-        storageKey: "mode",
+        code: "en",
+        iso: "en-US",
+        file: "en-US.json",
+        name: "English",
+      },
+      {
+        code: "fr",
+        iso: "fr-FR",
+        file: "fr-FR.json",
+        name: "Français",
       },
     ],
-    [
-      "@nuxtjs/i18n",
-      {
-        defaultLocale: "en",
-        strategy: "no_prefix",
-        lazy: true,
-        langDir: "locales",
-        detectBrowserLanguage: {
-          useCookie: true,
-          cookieKey: "locale",
-          redirectOn: "root",
-          fallbackLocale: "en",
-          alwaysRedirect: true,
-        },
-        locales: [
-          {
-            code: "en",
-            iso: "en-US",
-            file: "en-US.json",
-            name: "English",
-          },
-          {
-            code: "fr",
-            iso: "fr-FR",
-            file: "fr-FR.json",
-            name: "Français",
-          },
-        ],
-        baseUrl: "https://www.gravitalia.com",
-      },
-    ],
-    "@nuxtjs/tailwindcss",
-    "@nuxt/image",
-    "@nuxt/eslint",
-  ],
-
-  routeRules: {
-    // No JS.
-    "/": { experimentalNoScripts: false },
+    baseUrl: "https://www.gravitalia.com",
   },
 
-  devtools: { enabled: isDevelopment },
+  colorMode: {
+    preference: "system",
+    classPrefix: "",
+    classSuffix: "",
+  },
+  
+  sri: true,
+  security: {
+    headers: {
+      crossOriginEmbedderPolicy: "credentialless",
+      crossOriginOpenerPolicy: "same-origin",
+      crossOriginResourcePolicy: "same-site",
+      originAgentCluster: "?1",
+      referrerPolicy: "no-referrer",
+      strictTransportSecurity: {
+        maxAge: 63072000, // 2 years
+        includeSubdomains: true,
+        preload: true,
+      },
+      xFrameOptions: false, // managed by CSP.
+      contentSecurityPolicy: {
+        "default-src": ["'self'"],
+        "form-action": ["'none'"],
+        "frame-ancestors": ["'none'"],
+        "frame-src": ["'none'"],
+        "script-src-attr": ["'none'"],
+        "object-src": ["'none'"],
+        "connect-src": ["'self'"],
+        "img-src": ["'self'"],
+        "media-src": ["'self'"],
+        "script-src": ["'self'", "'strict-dynamic'", "'nonce-{{nonce}}'"],
+        "style-src": ["'self'", "'unsafe-inline'"],
+        "upgrade-insecure-requests": false,
+      },
+      permissionsPolicy: {
+        camera: [],
+        geolocation: [],
+        microphone: [],
+      },
+    },
+    corsHandler: {
+      origin: "*",
+      methods: "OPTIONS, GET",
+      allowHeaders: "Content-Type, Accept",
+      credentials: true,
+      maxAge: "86400",
+      preflight: {
+        statusCode: 200,
+      },
+    },
+    allowedMethodsRestricter: {
+      methods: ["OPTIONS", "GET"],
+    },
+    rateLimiter: false,
+  },
 
   nitro: {
-    preset: "cloudflare_pages",
-  },
-
-  vite: {
-    define: {
-      // By default, Vite doesn't include shims for NodeJS/
-      // necessary for segment analytics lib to work
-      global: {},
+    preset: isDevelopment ? "node-server" : "cloudflare_module",
+    prerender: {
+      autoSubfolderIndex: !isDevelopment,
     },
   },
-
-  compatibilityDate: "2024-09-01",
 });
