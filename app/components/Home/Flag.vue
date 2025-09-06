@@ -4,13 +4,12 @@ import { ChevronRightIcon } from "@heroicons/vue/24/outline";
 
 <template>
 	<div
-		class="relative w-full h-[20vh] xl:h-[50vh] shadow-xl overflow-hidden rounded-md"
+		class="relative w-full h-[30vh] xl:h-[50vh] shadow-xl overflow-hidden rounded-md"
 	>
-		<!-- Trois bandes verticales : bleu, blanc, rouge -->
 		<div class="absolute inset-0 flex">
-			<div class="flex-1 bg-[#0055A4]"/>
-			<div class="flex-1 bg-white"/>
-			<div class="flex-1 bg-[#EF4135]"/>
+			<div class="flex-1 bg-[#0055A4]" />
+			<div class="flex-1 bg-white" />
+			<div class="flex-1 bg-[#EF4135]" />
 		</div>
 
 		<div class="absolute inset-0 flex flex-col items-center justify-center">
@@ -18,17 +17,17 @@ import { ChevronRightIcon } from "@heroicons/vue/24/outline";
 				<p
 					class="text-lg md:text-2xl lg:text-3xl font-semibold dark:text-zinc-800"
 				>
-					Pas encore convaincu ?
+					{{ $t("home.flag.not_convinced") }}
 				</p>
 				<p
 					class="text-lg md:text-2xl lg:text-3xl font-semibold dark:text-zinc-800"
 				>
-					Gravitalia est développé en France 🇫🇷
+					{{ $t("home.flag.made_in_france") }}
 				</p>
 				<p
 					class="text-lg md:text-xl lg:text-2xl font-semibold dark:text-zinc-800"
 				>
-					et protégé par le droit européen.
+					{{ $t("home.flag.european_law") }}
 				</p>
 			</div>
 			<NuxtLink

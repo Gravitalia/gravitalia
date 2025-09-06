@@ -41,9 +41,8 @@ const cards = [
 			>
 				<div class="flex justify-between gap-x-4">
 					<NuxtImg
-						v-show="card.image"
 						:src="card.image"
-						class="mt-6 size-48"
+						class="mt-6 size-48 hidden lg:block"
 						alt=""
 						draggable="false"
 					/>

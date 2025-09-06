@@ -24,6 +24,11 @@
 		"scroll": {
 			"data_master": "Soyez maître de vos données, oui.",
 			"keep_secret": "Qui de mieux que vous pour garder vos secrets."
+		},
+		"flag": {
+			"not_convinced": "Pas encore convaincu ?",
+			"made_in_france": "Gravitalia est développé en France 🇫🇷",
+			"european_law": "et protégé par le droit européen."
 		}
 	},
 

@@ -24,6 +24,11 @@
 		"scroll": {
 			"data_master": "Keep control of your data.",
 			"keep_secret": "Who better than you to hold your secrets?"
+		},
+		"flag": {
+			"not_convinced": "Still not convinced?",
+			"made_in_france": "Gravitalia is developed in France 🇫🇷",
+			"european_law": "and protected by European law."
 		}
 	},
 
