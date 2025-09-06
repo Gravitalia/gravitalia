@@ -1,6 +1,10 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
-    <p>d</p>
+	<main>
+		<HomeBackground>
+			<HomeTitle />
+		</HomeBackground>
+		<HomeContent />
+	</main>
 </template>

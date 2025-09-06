@@ -1,1 +1,36 @@
-{}
+{
+	"layouts": {
+		"title": "Gravitalia"
+	},
+
+	"home": {
+		"slogan": "Un compte, plusieurs services.",
+		"start_by_create_account": "Commencer par créer un compte",
+		"create_account": "Créer mon compte",
+		"cards": {
+			"privacy": {
+				"title": "Respectueux de la vie privée",
+				"description": "Aucune publicité, aucun traceur, aucune revente de données. Vos données restent les vôtres, pas les nôtres. Vos données restent chiffrées en permanence, et vous seul détenez les clés."
+			},
+			"oss": {
+				"title": "Code source transparent",
+				"description": "Le code de tous nos logiciels est ouvert, gratuit et libre d'usage. Vous pouvez le télécharger, le modifier et l'exploiter sans redevance."
+			},
+			"selfhost": {
+				"title": "Services auto-hébergeables",
+				"description": "Si vous ne voulez pas nous faire confiance, vous pouvez héberger vous-mêmes nos services. Sans perdre une seule fonctionnalité et en restant connecté aux autres instances."
+			}
+		},
+		"scroll": {
+			"data_master": "Soyez maître de vos données, oui.",
+			"keep_secret": "Qui de mieux que vous pour garder vos secrets."
+		}
+	},
+
+	"services": {
+		"account": "Comptes",
+		"turms": "Turms",
+		"news": "Actualités",
+		"ai": "IA"
+	}
+}

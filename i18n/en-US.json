@@ -1,1 +1,36 @@
-{}
+{
+	"layouts": {
+		"title": "Gravitalia"
+	},
+
+	"home": {
+		"slogan": "One account, multiple services.",
+		"start_by_create_account": "Begin by creating an account",
+		"create_account": "Create my account",
+		"cards": {
+			"privacy": {
+				"title": "Respectful of privacy",
+				"description": "No ads, no trackers, no data reselling. Your data remains yours, not ours. Your data remains encrypted at all times, and only you hold the keys."
+			},
+			"oss": {
+				"title": "Transparent source code",
+				"description": "The code for all our software is open, free, and free to use. You can download, modify, and use it without paying any royalties."
+			},
+			"selfhost": {
+				"title": "Self-hosted services",
+				"description": "If you don't want to trust us, you can host our services yourself. Without losing a single feature and while remaining connected to other instances."
+			}
+		},
+		"scroll": {
+			"data_master": "Be in control of your data, yes.",
+			"keep_secret": "Who better than you to keep your secrets?"
+		}
+	},
+
+	"services": {
+		"account": "Account",
+		"turms": "Turms",
+		"news": "News",
+		"ai": "AI"
+	}
+}
