@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<h2 class="font-bold text-3xl xl:text-5xl flex">
+		<h2 class="font-bold text-3xl lg:text-5xl flex dark:text-white">
 			<span class="leading-[5rem] text-violet-600 dark:text-violet-500"
 				>Gravitalia&nbsp;</span
 			>

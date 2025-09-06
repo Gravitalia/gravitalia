@@ -5,7 +5,7 @@ import Caroussel from "./Caroussel.vue";
 
 <template>
 	<div class="absolute">
-		<h1 class="text-2xl xl:text-4xl font-bold">
+		<h1 class="text-2xl lg:text-4xl font-bold dark:text-white">
 			{{ $t("home.slogan") }}
 		</h1>
 		<Caroussel />

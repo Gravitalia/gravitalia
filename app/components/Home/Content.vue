@@ -4,6 +4,7 @@ import {
 	FolderIcon,
 	HomeIcon,
 } from "@heroicons/vue/24/outline";
+import Flag from "./Flag.vue";
 
 const { t } = useI18n();
 
@@ -35,24 +36,35 @@ const cards = [
 	>
 		<div v-for="card in cards" :key="card.title.value" class="flex h-82 w-full">
 			<CardSpotlight
-				class="cursor-pointer shadow-2xl bg-zinc-50 p-4 lg:p-6"
+				class="cursor-pointer shadow-2xl bg-zinc-50 dark:border-zinc-800 p-4"
 				gradient-color="#8b5cf650"
 			>
-				<h3 class="text-2xl text-zinc-800 flex pb-4 font-serif">
-					<div class="size-8 bg-white border border-zinc-200 rounded mx-2">
-						<component :is="card.icon" class="w-full p-1.5" />
+				<div class="flex justify-between gap-x-4">
+					<NuxtImg
+						v-show="card.image"
+						:src="card.image"
+						class="mt-6 size-48"
+						alt=""
+						draggable="false"
+					/>
+
+					<div>
+						<h3
+							class="text-2xl text-zinc-800 dark:text-zinc-200 pb-4 font-serif"
+						>
+							{{ card.title }}
+						</h3>
+
+						<p class="text-zinc-500 dark:text-zinc-400">
+							{{ card.description }}
+						</p>
 					</div>
-					{{ card.title }}
-				</h3>
-
-				<p class="text-zinc-600">{{ card.description }}</p>
-
-				<NuxtImg v-show="card.image" :src="card.image" class="size-56" alt="" />
+				</div>
 			</CardSpotlight>
 		</div>
 	</div>
 
-	<div class="h-screen" />
+	<div class="h-[50vh]" />
 
 	<div
 		class="h-screen z-10 flex min-h-64 items-center justify-center rounded-lg"
@@ -66,11 +78,7 @@ const cards = [
 		<AnimationTextScrollReveal :text="$t('home.scroll.keep_secret')" />
 	</div>
 
-	<div class="flex justify-center items-center py-56 relative">
-		<NuxtLink tabindex="0" to="https://account.gravitalia.com/signup">
-			<ButtonDefault class="px-6 py-3">
-				{{ $t("home.create_account") }}
-			</ButtonDefault>
-		</NuxtLink>
-	</div>
+	<div class="h-[50vh]" />
+
+	<Flag />
 </template>
