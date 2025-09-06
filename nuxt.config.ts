@@ -36,16 +36,16 @@ export default defineNuxtConfig({
 				{
 					name: "og:description",
 					content:
-						"Gravitalia, all connected. Share your photos in complete security and privacy.",
+						"Gravitalia is a self-hosted ecosystem of privacy-respecting services. With a single account, you get access to multiple tools, seamlessly connected and entirely under your control.",
 				},
 				// { name: "theme-color", content: "#8b5cf6" },
 				{ name: "robots", content: "index, follow" },
 				{ name: "twitter:card", content: "summary" },
-				{ name: "twitter:site", content: "@gravitalianews" },
+				{ name: "twitter:site", content: "@gravitaliaoss" },
 				{
 					name: "description",
 					content:
-						"Gravitalia, all connected. Share your photos in complete security and privacy.",
+						"Gravitalia is a self-hosted ecosystem of privacy-respecting services. With a single account, you get access to multiple tools, seamlessly connected and entirely under your control.",
 				},
 			],
 			bodyAttrs: {
