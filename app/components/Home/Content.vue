@@ -39,7 +39,7 @@ const cards = [
 				class="cursor-pointer shadow-2xl bg-zinc-50 dark:border-zinc-800 p-4"
 				gradient-color="#8b5cf650"
 			>
-				<div class="flex justify-between gap-x-4">
+				<div class="flex justify-between items-center gap-x-4">
 					<NuxtImg
 						:src="card.image"
 						class="mt-6 size-48 hidden lg:block"
