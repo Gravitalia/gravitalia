@@ -88,6 +88,12 @@ export default defineNuxtConfig({
 		classSuffix: "",
 	},
 
+	routeRules: {
+		"/**": {
+			prerender: true,
+		},
+	},
+
 	sri: true,
 	security: {
 		headers: {
