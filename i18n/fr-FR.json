@@ -19,16 +19,32 @@
 			"selfhost": {
 				"title": "Services auto-hébergeables",
 				"description": "Si vous ne voulez pas nous faire confiance, vous pouvez héberger vous-mêmes nos services. Sans perdre une seule fonctionnalité et en restant connecté aux autres instances."
+			},
+			"sovereign": {
+				"title": "Souverain numérique",
+				"description": "Vous n'êtes dépendant d'aucun prestataire : vos usages, vos choix et votre infrastructure vous appartiennent pleinement. Aucune grande entreprise ne se cache derrière nous."
 			}
 		},
+		"computer": {
+			"title": "Sécurité maximale",
+			"description": "Les applications les plus sensibles s'exécutent directement sur vos appareils et tirent parti de sa protection matérielle : authentification biométrique, enclave sécurisée, chiffrement des données au repos."
+		},
 		"scroll": {
-			"data_master": "Soyez maître de vos données, oui.",
+			"data_master": "Redevenez maître de vos données.",
 			"keep_secret": "Qui de mieux que vous pour garder vos secrets."
+		},
+		"ai": {
+			"that_why": "C'est pour cela que...",
+			"app_ai": "Chaque application embarque une IA",
+			"on_device": "Mais nos modèles fonctionnent sur votre appareil. Sans surcoût. Vos données ne quittent donc jamais le lieu sur lequel elles sont traitées...",
+			"protected": "... et vous pouvez filtrer efficacement toutes les entrées extérieures qui arrivent vers votre appareil. Vous n'aurez plus jamais de mauvaise surprise."
 		},
 		"flag": {
 			"not_convinced": "Pas encore convaincu ?",
 			"made_in_france": "Gravitalia est développé en France 🇫🇷",
-			"european_law": "et protégé par le droit européen."
+			"european_law": "et protégé par le droit européen.",
+			"gdrp": "Conforme au RGPD",
+			"host": "Hébergé en UE"
 		}
 	},
 

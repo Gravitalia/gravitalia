@@ -19,16 +19,32 @@
 			"selfhost": {
 				"title": "Self-hosted services",
 				"description": "If you don't want to trust us, you can host our services yourself. Without losing a single feature and while remaining connected to other instances."
+			},
+			"sovereign": {
+				"title": "Digital sovereign",
+				"description": "You are not dependent on any service provider: your usage, your choices, and your infrastructure belong entirely to you. There is no large company behind us."
 			}
 		},
+		"computer": {
+			"title": "Maximum security",
+			"description": "The most sensitive applications run directly on your devices and take advantage of their hardware protection: biometric authentication, secure enclave, encryption of data at rest."
+		},
 		"scroll": {
-			"data_master": "Keep control of your data.",
+			"data_master": "Take back control of your data.",
 			"keep_secret": "Who better than you to hold your secrets?"
+		},
+		"ai": {
+			"that_why": "That's why...",
+			"app_ai": "Each application includes AI",
+			"on_device": "But our models work on your device. At no extra cost. Your data therefore never leaves the place where it is processed...",
+			"protected": "... and you can effectively filter all external inputs coming into your device. You'll never have any unpleasant surprises again."
 		},
 		"flag": {
 			"not_convinced": "Still not convinced?",
 			"made_in_france": "Gravitalia is developed in France 🇫🇷",
-			"european_law": "and protected by European law."
+			"european_law": "and protected by European law.",
+			"gdrp": "GDPR compilant",
+			"host": "EU hosted"
 		}
 	},
 
