@@ -3,7 +3,7 @@ import {
 	ShieldCheckIcon,
 	FolderIcon,
 	HomeIcon,
-    UserCircleIcon,
+	UserCircleIcon,
 } from "@heroicons/vue/24/outline";
 
 const { t } = useI18n();
@@ -27,7 +27,7 @@ const cards = [
 		description: computed(() => t("home.cards.selfhost.description")),
 		image: "/svg/selfhostable.svg",
 	},
-    {
+	{
 		title: computed(() => t("home.cards.sovereign.title")),
 		icon: UserCircleIcon,
 		description: computed(() => t("home.cards.sovereign.description")),
@@ -37,9 +37,7 @@ const cards = [
 </script>
 
 <template>
-	<div
-		class="grid lg:grid-cols-2 2xl:grid-cols-4 gap-6 p-6 lg:-my-40"
-	>
+	<div class="grid lg:grid-cols-2 2xl:grid-cols-4 gap-6 p-6 lg:-my-40">
 		<div v-for="card in cards" :key="card.title.value" class="flex h-82 w-full">
 			<CardSpotlight
 				class="cursor-pointer shadow-2xl bg-zinc-50 dark:border-zinc-800 p-4"
@@ -57,7 +55,7 @@ const cards = [
 						<h3
 							class="flex text-2xl text-zinc-800 dark:text-zinc-200 pb-4 font-serif"
 						>
-                            <component :is="card.icon" class="lg:hidden mt-1 mr-2 size-6" />
+							<component :is="card.icon" class="lg:hidden mt-1 mr-2 size-6" />
 							{{ card.title }}
 						</h3>
 
