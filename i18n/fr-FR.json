@@ -25,6 +25,10 @@
 				"description": "Vous n'êtes dépendant d'aucun prestataire : vos usages, vos choix et votre infrastructure vous appartiennent pleinement. Aucune grande entreprise ne se cache derrière nous."
 			}
 		},
+		"site": {
+			"title": "Tout un écosystème",
+			"description": "Un accès complet à tous nos services, depuis un compte unique. L'équivalent de Google, mais avec la confidentialité en plus : un écosystème complet, mais décentralisable. Le tout chiffré."
+		},
 		"computer": {
 			"title": "Sécurité maximale",
 			"description": "Les applications les plus sensibles s'exécutent directement sur vos appareils et tirent parti de sa protection matérielle : authentification biométrique, enclave sécurisée, chiffrement des données au repos."

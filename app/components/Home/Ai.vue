@@ -16,13 +16,15 @@ const cards = [
 <template>
 	<div class="flex flex-col justify-center items-center">
 		<div class="border border-zinc-200 dark:border-zinc-800 rounded">
-			<NuxtImg
-				src="/services/ai.png"
-				format="webp"
-				quality="70"
-				width="100"
-				class="size-12"
-			/>
+			<NuxtLink to="https://ai.gravitalia.com" target="_blank">
+				<NuxtImg
+					src="/services/ai.png"
+					format="webp"
+					quality="70"
+					width="100"
+					class="size-12"
+				/>
+			</NuxtLink>
 		</div>
 
 		<AnimationBlurReveal class="mt-6 text-xl font-bold xl:text-3xl md:text-2xl">

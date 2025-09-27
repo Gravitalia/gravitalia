@@ -14,7 +14,7 @@ import {
 			<div class="flex-1 bg-[#EF4135]" />
 		</div>
 
-		<div class="absolute inset-0 bg-zinc-500/50 backdrop-blur-sm"/>
+		<div class="absolute inset-0 bg-zinc-500/50 backdrop-blur-sm" />
 
 		<div class="absolute inset-0 flex flex-col items-center justify-center">
 			<p class="text-lg md:text-2xl lg:text-3xl font-semibold text-zinc-800">

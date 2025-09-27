@@ -110,15 +110,7 @@
 					fill="#A3A3A3"
 				></path>
 			</g>
-			<image
-				width="1200"
-				height="700"
-				x="1"
-				y="52"
-				preserveAspectRatio="xMidYMid slice"
-				:href="src"
-				style="clip-path: url(#roundedBottom)"
-			></image>
+			<slot />
 		</g>
 		<defs>
 			<clipPath id="path0">

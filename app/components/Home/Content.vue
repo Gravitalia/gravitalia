@@ -20,8 +20,8 @@ import Flag from "./Flag.vue";
 	>
 		<AnimationTextScrollReveal :text="$t('home.scroll.keep_secret')" />
 	</div>
-	<div class="h-[50vh]"/>
+	<div class="h-[50vh]" />
 	<Ai />
-	<div class="h-[35svh]"/>
+	<div class="h-[35svh]" />
 	<Flag />
 </template>
