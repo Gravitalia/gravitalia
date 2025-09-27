@@ -22,6 +22,7 @@ const cards = [
 					format="webp"
 					quality="70"
 					width="100"
+					alt="Gravitalia AI logo"
 					class="size-12"
 				/>
 			</NuxtLink>
