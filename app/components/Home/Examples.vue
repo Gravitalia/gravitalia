@@ -23,10 +23,11 @@ import Safari from "../Mockup/Safari.vue";
 				width="1200"
 				height="700"
 				format="webp"
+				quality="80"
 				x="1"
 				y="52"
 				preserveAspectRatio="xMidYMid slice"
-				href="/mockup/news.png"
+				src="/mockup/news.png"
 				style="clip-path: url(#roundedBottom)"
 		/></Safari>
 	</div>
@@ -42,6 +43,7 @@ import Safari from "../Mockup/Safari.vue";
 				<NuxtImg
 					width="700"
 					format="webp"
+					quality="80"
 					alt="Macbook Pro background"
 					draggable="false"
 					class="relative h-full w-full rounded-t-[10px] border-2 border-[rgb(18,18,18)] border-solid bg-black bg-cover object-cover"
