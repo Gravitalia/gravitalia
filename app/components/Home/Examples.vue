@@ -13,19 +13,8 @@
 		<MockupSafari
 			class="h-80 w-80 lg:h-[425px] lg:w-[650px]"
 			url="news.gravitalia.com"
-		>
-			<NuxtImg
-				width="1200"
-				height="700"
-				format="webp"
-				quality="80"
-				alt="Gravitalia News"
-				x="1"
-				y="52"
-				preserveAspectRatio="xMidYMid slice"
-				src="/mockup/news.png"
-				style="clip-path: url(#roundedBottom)"
-		/></MockupSafari>
+			src="/mockup/news.png"
+		/>
 	</div>
 
 	<div
