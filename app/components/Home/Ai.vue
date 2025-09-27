@@ -35,7 +35,7 @@ const cards = [
 		</AnimationBlurReveal>
 
 		<AnimationBlurReveal>
-			<div class="mt-12 grid lg:grid-cols-2 2xl:grid-cols-4 gap-6 p-6 md:px-32">
+			<div class="mt-12 grid lg:grid-cols-2 gap-6 p-6 md:px-32 2xl:px-80">
 				<div v-for="card in cards" key="" class="flex h-82 w-full">
 					<CardSpotlight
 						class="cursor-pointer shadow-2xl bg-zinc-50 dark:border-zinc-800 p-4"

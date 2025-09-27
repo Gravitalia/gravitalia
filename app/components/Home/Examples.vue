@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="h-full max-h-xl w-full py-12 xl:py-24 px-10 xl:px-56 grid grid-cols-1 xl:grid-cols-2 place-items-center gap-y-6"
+		class="h-full max-h-xl w-full py-12 xl:py-24 px-10 xl:px-56 2xl:px-80 grid grid-cols-1 xl:grid-cols-2 place-items-center gap-y-6"
 	>
 		<div class="lg:mr-48">
 			<MockupMacbook

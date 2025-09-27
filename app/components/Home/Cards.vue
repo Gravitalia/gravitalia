@@ -37,7 +37,7 @@ const cards = [
 </script>
 
 <template>
-	<div class="grid lg:grid-cols-2 2xl:grid-cols-4 gap-6 p-6 lg:-my-40">
+	<div class="grid lg:grid-cols-2 gap-6 p-6 2xl:px-80 lg:-my-40">
 		<div v-for="card in cards" :key="card.title.value" class="flex h-82 w-full">
 			<CardSpotlight
 				class="cursor-pointer shadow-2xl bg-zinc-50 dark:border-zinc-800 p-4"
