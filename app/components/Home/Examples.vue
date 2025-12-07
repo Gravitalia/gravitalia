@@ -26,13 +26,12 @@
 				sclass="w-80 h-3 lg:w-[740px] lg:h-6"
 			>
 				<NuxtImg
-					width="700"
 					format="webp"
-					quality="80"
+					width="700"
 					alt="Turms application"
 					draggable="false"
 					class="relative h-full w-full rounded-t-[10px] border-2 border-[rgb(18,18,18)] border-solid bg-black bg-cover object-cover"
-					src="/mockup/turms.png"
+					src="/mockup/turms.webp"
 			/></MockupMacbook>
 		</div>
 		<div class="lg:ml-24 max-w-md xl:max-w-lg xl:order-2">
