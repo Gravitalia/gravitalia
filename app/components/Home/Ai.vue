@@ -18,10 +18,10 @@ const cards = [
 		<div class="border border-zinc-200 dark:border-zinc-800 rounded">
 			<NuxtLink to="https://ai.gravitalia.com" target="_blank">
 				<NuxtImg
-					src="/services/ai.png"
+					src="/services/ai.webp"
 					format="webp"
-					quality="70"
-					width="100"
+					quality="60"
+					width="40"
 					alt="Gravitalia AI logo"
 					class="size-12"
 				/>

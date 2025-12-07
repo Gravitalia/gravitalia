@@ -13,7 +13,7 @@
 		<MockupSafari
 			class="h-80 w-80 lg:h-[425px] lg:w-[650px]"
 			url="news.gravitalia.com"
-			src="/mockup/news.png"
+			src="/mockup/news.webp"
 		/>
 	</div>
 
