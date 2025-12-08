@@ -22,8 +22,8 @@
 	>
 		<div class="lg:mr-48 xl:order-1">
 			<MockupMacbook
-				class="h-44 w-64 lg:h-[425px] lg:w-[650px]"
-				sclass="w-80 h-3 lg:w-[740px] lg:h-6"
+				class="h-44 w-64 lg:h-[355px] lg:w-[550px]"
+				sclass="w-80 h-3 lg:w-[640px] lg:h-4"
 			>
 				<NuxtImg
 					format="webp"
