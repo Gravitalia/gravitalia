@@ -1,8 +1,6 @@
 <template>
-	<main>
-		<HomeBackground>
-			<HomeTitle />
-		</HomeBackground>
-		<HomeContent />
-	</main>
+	<HomeBackground>
+		<HomeTitle />
+	</HomeBackground>
+	<HomeContent />
 </template>

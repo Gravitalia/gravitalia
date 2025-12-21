@@ -1,5 +1,4 @@
 <template>
-	<main>
 		<div
 			v-bind="props"
 			:class="
@@ -22,7 +21,6 @@
 			</div>
 			<slot />
 		</div>
-	</main>
 </template>
 
 <script setup lang="ts">

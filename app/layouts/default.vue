@@ -31,7 +31,9 @@ const title = computed(() =>
 				</template>
 			</Head>
 			<Body>
-				<slot />
+				<main>
+					<slot />
+				</main>
 				<!-- <Footer /> -->
 			</Body>
 		</Html>
