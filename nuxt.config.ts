@@ -91,6 +91,7 @@ export default defineNuxtConfig({
 	routeRules: {
 		"/**": {
 			prerender: true,
+			noScripts: true,
 		},
 	},
 
