@@ -2,11 +2,13 @@
 	"layouts": {
 		"title": "Gravitalia"
 	},
-
 	"home": {
-		"slogan": "Un compte, plusieurs services.",
-		"start_by_create_account": "Commencer par créer un compte",
-		"create_account": "Créer mon compte",
+		"slogan_main": "Votre écosystème numérique,",
+		"slogan_italic": "la vie privée en plus.",
+		"title_desc": "Découvrez nos solutions souveraines. Naviguez, communiquez et analysez vos données avec la garantie d'une confidentialité absolue.",
+		"start_by_create_account": "Créer un compte",
+		"discover_projects": "Découvrir les projets",
+		"explore": "Explorez",
 		"cards": {
 			"privacy": {
 				"title": "Respectueux de la vie privée",
@@ -25,37 +27,59 @@
 				"description": "Vous n'êtes dépendant d'aucun prestataire : vos usages, vos choix et votre infrastructure vous appartiennent pleinement. Aucune grande entreprise ne se cache derrière nous."
 			}
 		},
-		"site": {
-			"title": "Tout un écosystème",
-			"description": "Un accès complet à tous nos services, depuis un compte unique. L'équivalent de Google, mais avec la confidentialité en plus : un écosystème complet, mais décentralisable. Le tout chiffré."
+		"turms": {
+			"badge": "Communication Pair-à-Pair",
+			"title": "Gravitalia Turms",
+			"desc": "Échangez en toute sécurité sans serveur central. Chaque message est chiffré de bout en bout et transite directement de votre appareil à celui de votre interlocuteur. L'infrastructure disparaît, la confidentialité reste.",
+			"btn": "Découvrir Turms"
 		},
-		"computer": {
-			"title": "Sécurité maximale",
-			"description": "Les applications les plus sensibles s'exécutent directement sur vos appareils et tirent parti de sa protection matérielle : authentification biométrique, enclave sécurisée, chiffrement des données au repos."
+		"news": {
+			"badge": "Agrégateur Neutre",
+			"title": "Gravitalia News",
+			"desc": "Une vision claire du monde. Notre moteur compile l'actualité sans bulle de filtre ni algorithme de suggestion addictif. Lisez ce qui compte vraiment, depuis des sources vérifiées, sans profilage publicitaire.",
+			"btn": "Lire l'actualité"
 		},
-		"scroll": {
-			"data_master": "Redevenez maître de vos données.",
-			"keep_secret": "Qui de mieux que vous pour garder vos secrets."
+		"galadril": {
+			"title": "Gravitalia Galadril",
+			"desc": "Plateforme d'analyse et d'intelligence de données. Visualisez les connexions complexes, extrayez des connaissances stratégiques et anticipez les tendances grâce à nos moteurs cognitifs."
 		},
 		"ai": {
-			"that_why": "C'est pour cela que...",
-			"app_ai": "Chaque application embarque une IA",
-			"on_device": "Mais nos modèles fonctionnent sur votre appareil. Sans surcoût. Vos données ne quittent donc jamais le lieu sur lequel elles sont traitées...",
-			"protected": "... et vous pouvez filtrer efficacement toutes les entrées extérieures qui arrivent vers votre appareil. Vous n'aurez plus jamais de mauvaise surprise."
+			"discover": "Découvrez",
+			"galadril": "Galadril",
+			"desc": "L'intelligence analytique conçue pour respecter vos secrets. Explorez des données complexes et extrayez des connaissances sans compromettre la sécurité.",
+			"features": {
+				"cognitive": {
+					"title": "Moteur cognitif souverain",
+					"desc": "Vos données ne quittent jamais votre environnement. L'analyse se fait localement ou sur des nœuds de confiance chiffrés."
+				},
+				"protection": {
+					"title": "Protection Absolue",
+					"desc": "Contrairement aux IA commerciales, Galadril ne s'entraîne pas sur vos requêtes. Ce qui est analysé vous appartient."
+				}
+			}
 		},
 		"flag": {
-			"not_convinced": "Pas encore convaincu ?",
-			"made_in_france": "Gravitalia est développé en France 🇫🇷",
-			"european_law": "et protégé par le droit européen.",
-			"gdrp": "Conforme au RGPD",
-			"host": "Hébergé en UE"
+			"made_in": "Construit en France,",
+			"for_world": "pensé pour le monde.",
+			"desc": "Gravitalia est soumis aux lois européennes sur la protection des données. Pas de revente de données, pas de portes dérobées, juste de la technologie souveraine.",
+			"gdpr": "Conformité RGPD stricte",
+			"hosted": "Hébergement Européen",
+			"btn": "Créer votre compte gratuit"
 		}
 	},
-
 	"services": {
-		"account": "Comptes",
-		"turms": "Turms",
-		"news": "Actualités",
-		"ai": "IA"
+		"account": "Gravitalia Account",
+		"turms": "Gravitalia Turms",
+		"news": "Gravitalia News",
+		"galadril": "Galadril Engine"
+	},
+	"footer": {
+		"products": "Produits",
+		"socials": "Réseaux",
+		"contact": "Nous contacter",
+		"legal": "Légal",
+		"privacy": "Politique de confidentialité",
+		"terms": "Conditions d'utilisation",
+		"rights": "Tous droits réservés."
 	}
 }

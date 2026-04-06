@@ -1,5 +1,5 @@
 <script setup>
-// import Footer from "~/components/Home/Footer.vue";
+import Footer from "~/components/Home/Footer.vue";
 
 const route = useRoute();
 const { t } = useI18n();
@@ -34,7 +34,7 @@ const title = computed(() =>
 				<main>
 					<slot />
 				</main>
-				<!-- <Footer /> -->
+				<Footer />
 			</Body>
 		</Html>
 	</div>

@@ -7,64 +7,57 @@ import {
 } from "@heroicons/vue/24/outline";
 
 const { t } = useI18n();
-
-const cards = [
+const cards = computed(() => [
 	{
-		title: computed(() => t("home.cards.privacy.title")),
+		title: t("home.cards.privacy.title"),
 		icon: ShieldCheckIcon,
-		description: computed(() => t("home.cards.privacy.description")),
-		image: "/svg/secure-files.svg",
+		description: t("home.cards.privacy.description"),
 	},
 	{
-		title: computed(() => t("home.cards.oss.title")),
+		title: t("home.cards.oss.title"),
 		icon: FolderIcon,
-		description: computed(() => t("home.cards.oss.description")),
-		image: "/svg/oss.svg",
+		description: t("home.cards.oss.description"),
 	},
 	{
-		title: computed(() => t("home.cards.selfhost.title")),
+		title: t("home.cards.selfhost.title"),
 		icon: HomeIcon,
-		description: computed(() => t("home.cards.selfhost.description")),
-		image: "/svg/selfhostable.svg",
+		description: t("home.cards.selfhost.description"),
 	},
 	{
-		title: computed(() => t("home.cards.sovereign.title")),
+		title: t("home.cards.sovereign.title"),
 		icon: UserCircleIcon,
-		description: computed(() => t("home.cards.sovereign.description")),
-		image: "/svg/user.svg",
+		description: t("home.cards.sovereign.description"),
 	},
-];
+]);
 </script>
 
 <template>
-	<div class="grid lg:grid-cols-2 gap-6 p-6 2xl:px-80 lg:-my-40">
-		<div v-for="card in cards" :key="card.title.value" class="flex h-82 w-full">
-			<CardSpotlight
-				class="cursor-pointer shadow-2xl bg-zinc-50 dark:border-zinc-800 p-4"
-				gradient-color="#8b5cf650"
-			>
-				<div class="flex justify-between items-center gap-x-4">
-					<NuxtImg
-						:src="card.image"
-						class="mt-6 size-48 hidden lg:block"
-						alt=""
-						draggable="false"
-					/>
-
-					<div>
-						<h3
-							class="flex text-2xl text-zinc-800 dark:text-zinc-200 pb-4 font-serif"
-						>
-							<component :is="card.icon" class="lg:hidden mt-1 mr-2 size-6" />
-							{{ card.title }}
-						</h3>
-
-						<p class="text-zinc-500 dark:text-zinc-400">
-							{{ card.description }}
-						</p>
-					</div>
+	<div
+		class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 px-6 lg:px-12 max-w-7xl mx-auto py-24 relative z-20"
+	>
+		<CardSpotlight
+			v-for="card in cards"
+			:key="card.title"
+			class="group p-8 md:p-10 flex flex-col gap-4 backdrop-blur-xl bg-white/40 dark:bg-zinc-900/40 border border-zinc-200/50 dark:border-white/10 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(139,92,246,0.2)]"
+		>
+			<div class="flex items-center gap-4 relative z-10 mb-2">
+				<div
+					class="p-3 shrink-0 rounded-xl bg-violet-100 dark:bg-violet-500/20 text-violet-600 dark:text-violet-400 border border-violet-200 dark:border-violet-500/30"
+				>
+					<component :is="card.icon" class="size-7" />
 				</div>
-			</CardSpotlight>
-		</div>
+				<h3
+					class="text-2xl font-bold font-sans text-zinc-900 dark:text-white tracking-tight"
+				>
+					{{ card.title }}
+				</h3>
+			</div>
+
+			<div class="relative z-10">
+				<p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+					{{ card.description }}
+				</p>
+			</div>
+		</CardSpotlight>
 	</div>
 </template>

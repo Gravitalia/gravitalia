@@ -1,55 +1,54 @@
 <script setup lang="ts">
-import {
-	ChevronRightIcon,
-	ShieldCheckIcon,
-	ServerStackIcon,
-} from "@heroicons/vue/24/outline";
+import { ShieldCheckIcon, ServerStackIcon } from "@heroicons/vue/24/outline";
 </script>
 
 <template>
-	<div class="relative w-full h-[50vh] xl:h-[70vh] overflow-hidden">
-		<div class="absolute inset-0 flex">
+	<div class="relative w-full py-32 overflow-hidden border-t border-white/5">
+		<div
+			class="absolute inset-0 flex opacity-20 dark:opacity-10 pointer-events-none -z-20"
+		>
 			<div class="flex-1 bg-[#0055A4]" />
 			<div class="flex-1 bg-white" />
 			<div class="flex-1 bg-[#EF4135]" />
 		</div>
 
-		<div class="absolute inset-0 bg-zinc-500/50 backdrop-blur-sm" />
+		<div
+			class="absolute inset-0 bg-zinc-50/80 dark:bg-zinc-950/80 backdrop-blur-xl -z-10"
+		/>
 
-		<div class="absolute inset-0 flex flex-col items-center justify-center">
-			<p class="text-lg md:text-2xl lg:text-3xl font-semibold text-zinc-800">
-				{{ $t("home.flag.not_convinced") }}
-			</p>
-			<p class="text-lg md:text-2xl lg:text-3xl font-semibold text-zinc-800">
-				{{ $t("home.flag.made_in_france") }}
-			</p>
-			<p class="text-zinc-800">
-				{{ $t("home.flag.european_law") }}
-			</p>
-			<NuxtLink
-				tabindex="0"
-				to="https://account.gravitalia.com/signup"
-				rel="noopener noreferrer"
-				class="flex underline mt-6 xl:ml-1 text-md xl:text-lg text-zinc-800"
+		<div
+			class="relative z-10 max-w-4xl mx-auto px-6 text-center flex flex-col items-center"
+		>
+			<h2
+				class="text-3xl md:text-5xl font-bold text-zinc-900 dark:text-white mb-6"
 			>
-				{{ $t("home.create_account") }}
-				<ChevronRightIcon class="mt-1.5 size-4" />
-			</NuxtLink>
+				{{ $t("home.flag.made_in") }}<br >
+				<span class="text-violet-600 dark:text-violet-400">{{
+					$t("home.flag.for_world")
+				}}</span>
+			</h2>
+			<p class="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mb-10">
+				{{ $t("home.flag.desc") }}
+			</p>
 
-			<hr class="h-px my-8 w-1/4 bg-zinc-400 border-0" >
-
-			<div class="grid grid-cols-2 gap-6">
-				<div class="flex text-zinc-800">
-					<ShieldCheckIcon class="size-5 mr-2" />
-					<p class="text-sm">
-						{{ $t("home.flag.gdrp") }}
-					</p>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-2xl mb-12">
+				<div
+					class="flex items-center justify-center p-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm text-zinc-800 dark:text-zinc-200"
+				>
+					<ShieldCheckIcon class="size-6 mr-3 text-violet-500" />
+					<span class="font-medium">{{ $t("home.flag.gdpr") }}</span>
 				</div>
-				<div class="flex text-zinc-800">
-					<ServerStackIcon class="size-5 mr-2" />
-					<p class="text-sm">{{ $t("home.flag.host") }}</p>
+				<div
+					class="flex items-center justify-center p-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm text-zinc-800 dark:text-zinc-200"
+				>
+					<ServerStackIcon class="size-6 mr-3 text-violet-500" />
+					<span class="font-medium">{{ $t("home.flag.hosted") }}</span>
 				</div>
 			</div>
+
+			<ButtonDefault class="text-lg px-8 py-4">
+				{{ $t("home.flag.btn") }}
+			</ButtonDefault>
 		</div>
 	</div>
 </template>

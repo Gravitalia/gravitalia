@@ -1,22 +1,33 @@
 <script setup lang="ts">
-const { t } = useI18n();
+import { BoltIcon, ShieldCheckIcon } from "@heroicons/vue/24/outline";
 
-const cards = [
+const { t } = useI18n();
+const features = computed(() => [
 	{
-		description: computed(() => t("home.ai.on_device")),
-		image: "/svg/ai.svg",
+		title: t("home.ai.features.cognitive.title"),
+		description: t("home.ai.features.cognitive.desc"),
+		icon: BoltIcon,
 	},
 	{
-		description: computed(() => t("home.ai.protected")),
-		image: "/svg/email.svg",
+		title: t("home.ai.features.protection.title"),
+		description: t("home.ai.features.protection.desc"),
+		icon: ShieldCheckIcon,
 	},
-];
+]);
 </script>
 
 <template>
-	<div class="flex flex-col justify-center items-center">
-		<div class="border border-zinc-200 dark:border-zinc-800 rounded">
-			<NuxtLink to="https://ai.gravitalia.com" target="_blank">
+	<div
+		class="w-full max-w-5xl mx-auto px-6 py-24 flex flex-col items-center text-center"
+	>
+		<div
+			class="absolute w-[600px] h-[600px] bg-violet-600/20 blur-[120px] rounded-full -z-10 pointer-events-none"
+		/>
+
+		<div
+			class="p-4 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md mb-8 inline-block shadow-[0_0_30px_rgba(139,92,246,0.2)]"
+		>
+			<NuxtLink to="https://galadril.gravitalia.com" target="_blank">
 				<NuxtImg
 					src="/services/ai.webp"
 					format="webp"
@@ -28,37 +39,31 @@ const cards = [
 			</NuxtLink>
 		</div>
 
-		<AnimationBlurReveal class="mt-6 text-xl font-bold xl:text-3xl md:text-2xl">
-			{{ $t("home.ai.that_why") }}
-		</AnimationBlurReveal>
-		<AnimationBlurReveal
-			class="text-center text-2xl font-bold xl:text-5xl p-4 lg:text-4xl md:p-8 md:text-3xl"
+		<h2
+			class="text-4xl md:text-6xl font-bold text-zinc-900 dark:text-white mb-6 tracking-tight"
 		>
-			{{ $t("home.ai.app_ai") }}
-		</AnimationBlurReveal>
+			{{ $t("home.ai.discover") }}
+			<span
+				class="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-indigo-500"
+				>{{ $t("home.ai.galadril") }}</span
+			>
+		</h2>
+		<p class="text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mb-16">
+			{{ $t("home.ai.desc") }}
+		</p>
 
-		<AnimationBlurReveal>
-			<div class="mt-12 grid lg:grid-cols-2 gap-6 p-6 md:px-32 2xl:px-80">
-				<div v-for="card in cards" key="" class="flex h-82 w-full">
-					<CardSpotlight
-						class="cursor-pointer shadow-2xl bg-zinc-50 dark:border-zinc-800 p-4"
-						gradient-color="#8b5cf650"
-					>
-						<div class="flex justify-between items-center gap-x-4">
-							<NuxtImg
-								:src="card.image"
-								class="mt-6 size-36 hidden lg:block"
-								alt=""
-								draggable="false"
-							/>
-
-							<p class="text-zinc-500 dark:text-zinc-400">
-								{{ card.description }}
-							</p>
-						</div>
-					</CardSpotlight>
-				</div>
-			</div>
-		</AnimationBlurReveal>
+		<div class="grid md:grid-cols-2 gap-6 w-full">
+			<CardSpotlight
+				v-for="feat in features"
+				:key="feat.title"
+				class="p-8 text-left bg-zinc-50 dark:bg-zinc-900/40"
+			>
+				<component :is="feat.icon" class="size-10 text-violet-500 mb-6" />
+				<h3 class="text-2xl font-semibold text-zinc-900 dark:text-white mb-3">
+					{{ feat.title }}
+				</h3>
+				<p class="text-zinc-600 dark:text-zinc-400">{{ feat.description }}</p>
+			</CardSpotlight>
+		</div>
 	</div>
 </template>

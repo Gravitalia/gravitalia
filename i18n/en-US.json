@@ -2,11 +2,13 @@
 	"layouts": {
 		"title": "Gravitalia"
 	},
-
 	"home": {
-		"slogan": "One account, multiple services.",
-		"start_by_create_account": "Begin by creating an account",
-		"create_account": "Create my account",
+		"slogan_main": "Your digital ecosystem,",
+		"slogan_italic": "with added privacy.",
+		"title_desc": "Discover our sovereign solutions. Browse, communicate, and analyze your data with the guarantee of absolute privacy.",
+		"start_by_create_account": "Create an account",
+		"discover_projects": "Discover the projects",
+		"explore": "Explore",
 		"cards": {
 			"privacy": {
 				"title": "Respectful of privacy",
@@ -25,37 +27,59 @@
 				"description": "You are not dependent on any service provider: your usage, your choices, and your infrastructure belong entirely to you. There is no large company behind us."
 			}
 		},
-		"site": {
-			"title": "An entire ecosystem",
-			"description": "Full access to all our services from a single account. The equivalent of Google, but with added privacy: a complete ecosystem that can be decentralized. All encrypted."
+		"turms": {
+			"badge": "Peer-to-Peer Communication",
+			"title": "Gravitalia Turms",
+			"desc": "Communicate securely without a central server. Every message is end-to-end encrypted and goes directly from your device to your contact's. The infrastructure disappears, privacy remains.",
+			"btn": "Discover Turms"
 		},
-		"computer": {
-			"title": "Maximum security",
-			"description": "The most sensitive applications run directly on your devices and take advantage of their hardware protection: biometric authentication, secure enclave, encryption of data at rest."
+		"news": {
+			"badge": "Neutral Aggregator",
+			"title": "Gravitalia News",
+			"desc": "A clear view of the world. Our engine compiles news without filter bubbles or addictive suggestion algorithms. Read what really matters, from verified sources, without advertising profiling.",
+			"btn": "Read the news"
 		},
-		"scroll": {
-			"data_master": "Take back control of your data.",
-			"keep_secret": "Who better than you to hold your secrets?"
+		"galadril": {
+			"title": "Gravitalia Galadril",
+			"desc": "Data analysis and intelligence platform. Visualize complex connections, extract strategic insights, and anticipate trends with our cognitive engines."
 		},
 		"ai": {
-			"that_why": "That's why...",
-			"app_ai": "Each application includes AI",
-			"on_device": "But our models work on your device. At no extra cost. Your data therefore never leaves the place where it is processed...",
-			"protected": "... and you can effectively filter all external inputs coming into your device. You'll never have any unpleasant surprises again."
+			"discover": "Discover",
+			"galadril": "Galadril",
+			"desc": "Analytical intelligence designed to respect your secrets. Explore complex data and extract insights without compromising security.",
+			"features": {
+				"cognitive": {
+					"title": "Sovereign cognitive engine",
+					"desc": "Your data never leaves your environment. Analysis is done locally or on encrypted trusted nodes."
+				},
+				"protection": {
+					"title": "Absolute Protection",
+					"desc": "Unlike commercial AIs, Galadril doesn't train on your queries. What is analyzed belongs to you."
+				}
+			}
 		},
 		"flag": {
-			"not_convinced": "Still not convinced?",
-			"made_in_france": "Gravitalia is developed in France 🇫🇷",
-			"european_law": "and protected by European law.",
-			"gdrp": "GDPR compilant",
-			"host": "EU hosted"
+			"made_in": "Built in France,",
+			"for_world": "designed for the world.",
+			"desc": "Gravitalia is subject to European data protection laws. No data resale, no backdoors, just sovereign technology.",
+			"gdpr": "Strict GDPR compliance",
+			"hosted": "European Hosting",
+			"btn": "Create your free account"
 		}
 	},
-
 	"services": {
-		"account": "Account",
-		"turms": "Turms",
-		"news": "News",
-		"ai": "AI"
+		"account": "Gravitalia Account",
+		"turms": "Gravitalia Turms",
+		"news": "Gravitalia News",
+		"galadril": "Galadril Engine"
+	},
+	"footer": {
+		"products": "Products",
+		"socials": "Socials",
+		"contact": "Contact us",
+		"legal": "Legal",
+		"privacy": "Privacy Policy",
+		"terms": "Terms & Conditions",
+		"rights": "All rights reserved."
 	}
 }
