@@ -41,7 +41,7 @@ const currentYear = new Date().getFullYear();
 						Gravitalia Turms
 					</NuxtLink>
 					<NuxtLink
-						to="#"
+						to="https://galadril.gravitalia.com"
 						class="text-sm text-zinc-500 hover:text-violet-600 dark:text-zinc-400 dark:hover:text-violet-400 transition-colors"
 					>
 						Galadril Engine

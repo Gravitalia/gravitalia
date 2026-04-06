@@ -14,12 +14,12 @@
 				<li class="h-[1.5em] leading-[1.5em] whitespace-nowrap">
 					<NuxtLink
 						class="hover:underline"
-						to="https://turms.gravitalia.com/"
+						to="https://turms.gravitalia.com"
 						>{{ $t("services.turms") }}</NuxtLink
 					>
 				</li>
 				<li class="h-[1.5em] leading-[1.5em] whitespace-nowrap">
-					<NuxtLink class="hover:underline" to="https://news.gravitalia.com/">{{
+					<NuxtLink class="hover:underline" to="https://news.gravitalia.com">{{
 						$t("services.news")
 					}}</NuxtLink>
 				</li>
@@ -33,7 +33,7 @@
 				<li class="h-[1.5em] leading-[1.5em] whitespace-nowrap">
 					<NuxtLink
 						class="hover:underline"
-						to="https://account.gravitalia.com/"
+						to="https://account.gravitalia.com"
 						>{{ $t("services.account") }}</NuxtLink
 					>
 				</li>
