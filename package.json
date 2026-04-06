@@ -14,9 +14,9 @@
 	"devDependencies": {
 		"@heroicons/vue": "^2.2.0",
 		"clsx": "^2.1.1",
-		"prettier": "^3.7.4",
+		"prettier": "^3.8.1",
 		"std-env": "^3.10.0",
-		"tailwind-merge": "^3.4.0"
+		"tailwind-merge": "^3.5.0"
 	},
 	"dependencies": {
 		"@nuxt/eslint": "1.10.0",
@@ -24,13 +24,14 @@
 		"@nuxtjs/color-mode": "^4.0.0",
 		"@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge@10.2.1-29389913.15bb7bb",
 		"@nuxtjs/tailwindcss": "^6.14.0",
-		"@vueuse/core": "^14.1.0",
-		"eslint": "^9.39.1",
-		"motion-v": "^1.7.4",
-		"nuxt": "^4.2.1",
-		"nuxt-security": "^2.5.0",
+		"@vueuse/core": "^14.2.1",
+		"eslint": "^9.39.4",
+		"gsap": "^3.14.2",
+		"motion-v": "^1.10.3",
+		"nuxt": "^4.4.2",
+		"nuxt-security": "^2.5.1",
 		"sharp": "^0.34.5",
-		"vue": "^3.5.25",
-		"vue-router": "^4.6.3"
+		"vue": "^3.5.32",
+		"vue-router": "^4.6.4"
 	}
 }
