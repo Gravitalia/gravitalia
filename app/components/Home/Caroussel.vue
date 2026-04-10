@@ -12,11 +12,9 @@
 				class="animate-change hover:[animation-play-state:paused] flex flex-col absolute w-full text-violet-600 dark:text-violet-400"
 			>
 				<li class="h-[1.5em] leading-[1.5em] whitespace-nowrap">
-					<NuxtLink
-						class="hover:underline"
-						to="https://turms.gravitalia.com"
-						>{{ $t("services.turms") }}</NuxtLink
-					>
+					<NuxtLink class="hover:underline" to="https://turms.gravitalia.com">{{
+						$t("services.turms")
+					}}</NuxtLink>
 				</li>
 				<li class="h-[1.5em] leading-[1.5em] whitespace-nowrap">
 					<NuxtLink class="hover:underline" to="https://news.gravitalia.com">{{

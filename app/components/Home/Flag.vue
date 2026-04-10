@@ -46,9 +46,11 @@ import { ShieldCheckIcon, ServerStackIcon } from "@heroicons/vue/24/outline";
 				</div>
 			</div>
 
-			<ButtonDefault class="text-lg px-8 py-4">
-				{{ $t("home.flag.btn") }}
-			</ButtonDefault>
+			<NuxtLink to="https://account.gravitalia.com/signup">
+				<ButtonDefault class="text-lg px-8 py-4">
+					{{ $t("home.flag.btn") }}
+				</ButtonDefault>
+			</NuxtLink>
 		</div>
 	</div>
 </template>
